@@ -1,0 +1,31 @@
+body {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+table, .mat-paginator {
+  width: 100%;
+}
+main {
+  background-color: rgb(66, 66, 66);
+}
+button {
+    margin: 15px;
+}
+
+footer, header {
+  background-color: #c2185b;
+  color: #fff;
+  padding: 15px;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
+  padding-right: 30px !important;
+}
+
+.delete-column {
+  width: 20px;
+}

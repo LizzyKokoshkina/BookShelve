@@ -1,0 +1,33 @@
+
+  <form [formGroup]="bookForm">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author">
+    </mat-form-field>
+    <br />
+    <mat-form-field appearance="fill">
+      <mat-select placeholder="Type" formControlName="bookType">
+        <mat-option value="0">Novel</mat-option>
+        <mat-option value="1">Historical</mat-option>
+        <mat-option value="2">Fiction</mat-option>
+        <mat-option value="3">Poetry</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <input matInput formControlName="year">
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Amount of pages</mat-label>
+      <input matInput formControlName="pagesAmount">
+    </mat-form-field>
+    <br />
+    <button mat-raised-button type="submit" (click)="addBook()" color="primary">Submit</button>
+  </form>
